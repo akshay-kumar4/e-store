@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Components/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import ProuctList from "./Components/Product-List/ProuctList";
+import ProductDetails from "./Components/Product-Details/ProductDetails";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<ProuctList />} />
-        <Route path="/product/:productId" element={<ProuctList />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
       </Routes>
     </div>
   );
